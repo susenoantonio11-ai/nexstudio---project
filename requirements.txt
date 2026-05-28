@@ -15,6 +15,3 @@ pandas==2.2.3
 numpy==1.26.4
 openpyxl==3.1.5
 scikit-learn==1.5.2
-statsmodels==0.14.4
-pyarrow==17.0.0
-tifffile==2024.8.30
