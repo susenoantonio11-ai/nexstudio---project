@@ -1,0 +1,22 @@
+# NEXA Probability Engine — Python dependencies
+#
+# CORE (required):
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0
+pandas>=2.0
+numpy>=1.24
+scipy>=1.11
+scikit-learn>=1.3
+
+# OPTIONAL — graceful fallback if missing (see models.py):
+# xgboost>=2.0
+# lightgbm>=4.0
+# hmmlearn>=0.3
+# shap>=0.44   # for explainability deep-dive
+# matplotlib>=3.7  # for plotting backtest curves
+
+# Install:
+#   pip install -r backend/nexa_probability/requirements.txt
+# Run:
+#   uvicorn backend.nexa_probability.api:app --host 0.0.0.0 --port 8000 --reload

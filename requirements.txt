@@ -1,0 +1,44 @@
+# NEXLYTICS Backend Requirements
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.12
+
+# Database
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10  # PostgreSQL driver (also works with SQLite by default)
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+cryptography==43.0.3  # Fernet encryption untuk AI secrets storage
+
+# HTTP client untuk AI provider calls (multi-provider)
+httpx==0.27.2
+
+# Validation
+pydantic==2.9.2
+pydantic-settings==2.5.2
+email-validator==2.2.0
+
+# Data processing
+pandas==2.2.3
+numpy==1.26.4
+openpyxl==3.1.5  # for xlsx
+pyarrow==17.0.0  # for parquet
+
+# Raster / Geospatial (GEE Collector pipeline)
+# rasterio is preferred (full CRS handling, robust). Install: pip install rasterio
+# Fallback library tifffile lebih ringan tapi tanpa CRS info.
+rasterio==1.4.1
+tifffile==2024.8.30
+
+# ML
+scikit-learn==1.5.2
+statsmodels==0.14.4
+
+# Optional
+# prophet==1.1.6  # uncomment for advanced forecasting
+
+# Gemini API
+google-generativeai==0.8.3
